@@ -1,0 +1,22 @@
+/*== Breadcrumbs ==*/
+ol.breadcrumb {
+    background: none;
+    text-align: center;
+    justify-content: center;
+    margin:0;
+    & li{
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 25px;
+    	a {
+		  color:$color-white;
+		}
+    }
+    & .breadcrumb-item.active{
+		color:$color-white;
+    }
+    & .breadcrumb-item+.breadcrumb-item::before{
+        color:$color-white;
+    }
+}
+/*== End Breadcrumbs ==*/

@@ -1,0 +1,28 @@
+body{
+	overflow-x:hidden;
+}
+/*== Fix Moz ==*/
+@-moz-document url-prefix(){
+}
+/*== Fix Moz ==*/
+
+/*== Hover link ==*/
+/*== End Hover link ==*/
+
+/*== Container ==*/
+ul{
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li{
+		a{
+			color:#fff;
+			font-size:15px;
+			text-transform:capitalize ;
+			padding:15px;
+			display: inline-block;
+		}
+	}
+}
+/*== End Container ==*/

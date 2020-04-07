@@ -1,0 +1,38 @@
+.bg_page_color_advice{
+	.title_page{
+		h1{
+			max-width:800px;
+		}
+	}
+}
+.color_advice_page{
+	&_content{
+		.container {
+		    max-width: 846px;
+		    padding: 80px 15px 68px;
+		}
+	}
+}
+.bg_form_advice{
+	background:url(../images/bg_product_advice.png) center center/cover no-repeat;
+	padding: 0 0 91px;
+	& .container {
+	    max-width: 780px;
+	}
+	.contact_page_form_box {
+	    overflow: hidden;
+	    p {
+		    max-width: 100%;
+		    margin: 80px auto 42px;
+		}
+		 h3 {
+		    font-size: 16px;
+		    line-height: 20px;
+		    color: $color-white;
+		    margin: 0 0 12px;
+		}
+		.form-control-file{
+			border:none;
+		}
+	}
+}

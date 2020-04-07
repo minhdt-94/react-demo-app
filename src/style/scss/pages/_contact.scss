@@ -1,0 +1,121 @@
+.contact_page_info{
+	.container {
+	    max-width:1140px;
+	    padding: 80px 15px 0;
+	}
+	&_img {
+	    height: 486px;
+	    margin: 0;
+	}
+	&_text {
+	    height: 486px;
+	    overflow-y: auto;
+	    position: relative;
+	    padding: 40px;
+		@include border_gradient;
+	    font-size: 14px;
+	    color: $color-black;
+	    font-weight: 300;
+	    h4 {
+		    font-weight: bold;
+		    font-size: 16px;
+		    margin: 0 0 40px;
+		    line-height:25px;
+		}	
+		strong {
+		    font-weight: 600;
+		}
+	}
+}
+.contact_page_hotline{
+	@include border_gradient;
+    padding: 21px;
+    p{
+    	&:nth-child(1) {
+		    font-weight: 900;
+		    font-size: 16px;
+		    line-height: 26px;
+		    color: #470A3C;
+		    padding: 0 0 3px;
+		}
+		&:nth-child(2) {
+		    font-weight: 900;
+		    font-size: 40px;
+		    @include color_gradient;
+		}
+    }
+}
+.contact_page_form{
+	&_bg{
+		background:url(../images/bg_form_contact.jpg) center center/cover no-repeat;
+		height:687px;
+		.container {
+		    max-width:1140px;
+		}
+	}
+	&_box{
+		p {
+		    font-weight: 900;
+		    font-size: 16px;
+		    line-height: 26px;
+		    text-align: center;
+		    color: $color-white;
+		    max-width: 556px;
+		    margin: 47px auto;
+		}
+		input {
+		    background: none;
+		    padding: 0 !important;
+		    border: none;
+		    border-bottom: 1px solid $color-white;
+		    border-radius: 0;
+		    font-size: 16px;
+		    line-height: 20px;
+		    color:$color-white;
+		}
+		.form-control{
+			&::placeholder {
+			    color: $color-white;
+			}
+			&:focus {
+			    border-color: $color-white;
+			    background: none;
+			    color: $color-white;
+			}
+		}
+		.form-group {
+		    margin-bottom: 2rem;
+		}
+		label {
+		    font-size: 16px;
+		    color: $color-white;
+		}
+		textarea.form-control {
+		    background: rgba(238, 238, 238, 0.2);
+		    border: 1px solid $color-white;
+		    height: 125px;
+		    &:focus{
+				box-shadow:none;
+		    }
+		}
+		.btn_custom{
+			box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+		    border-radius: 8px;
+		    width: 100%;
+		    display: block;
+		    font-weight: 900;
+		    font-size: 16px;
+		    line-height: 26px;
+		    letter-spacing: 0.08em;
+		    color: $color-white;
+		    border: none;
+		    height: 52px;
+		    &.btn_send_contact {
+			    background:linear-gradient(90deg, #B57E10 0%, #F9DF7B 57.29%, #CCA035 100%);
+			    &:hover{
+			       background:linear-gradient(90deg, #F9DF7B 0%, #B57E10 57.29%, #CCA035 100%);
+			    }
+			}
+		}
+	}
+}

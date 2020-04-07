@@ -1,0 +1,48 @@
+@mixin hover_text($color,$text-decoration){
+	color:$color;
+	text-decoration:$text-decoration;
+}
+@mixin img_fix($width,$max-width,$height,$object-fit){
+	width:$width;
+	height:$height;
+	max-width:$max-width;
+	object-fit:$object-fit;
+}
+@mixin full_width{
+	width: 100%;
+	float:left;
+}
+@mixin center_content_flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin between_content_flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin color_gradient{
+	background: linear-gradient(90deg, #F9DF7B 0%, #B57E10 20.37%, #B78114 26.42%, #BF8C1F 32.26%, #CB9E33 38.02%, #DDB64E 43.72%, #F3D671 49.33%, #F9DF7B 50.75%, #FFF3A6 51.87%, #F9DF7B 59.32%, #B57E10 84.25%, #E5C35C 94.9%, #F9DF7B 99.97%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@mixin bg_gradient{
+	background: linear-gradient(90deg, #F9DF7B 0%, #B57E10 20.37%, #B78114 26.42%, #BF8C1F 32.26%, #CB9E33 38.02%, #DDB64E 43.72%, #F3D671 49.33%, #F9DF7B 50.75%, #FFF3A6 51.87%, #F9DF7B 59.32%, #B57E10 84.25%, #E5C35C 94.9%, #F9DF7B 99.97%);
+}
+@mixin border_gradient{
+	border: 1px solid;
+    border-image-source: linear-gradient(180deg, #B57E10 0%, #F9DF7B 57.29%, #CCA035 100%);
+    border-image-slice: 1;
+}
+@mixin border_gradient_radius{
+    border-left: 1px solid #B57E10;
+    border-right: 1px solid #F9DF7B;
+    border-radius: 4px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#B57E10), to(#F9DF7B)),-webkit-gradient(linear, left top, right top, from(#F9DF7B), color-stop(72%, #f6df8a));
+    background-image: linear-gradient(to right, #B57E10 0%, #F9DF7B 100%),linear-gradient(to right, #F9DF7B 0%, #f6df8a 72%);
+    overflow: hidden;
+}

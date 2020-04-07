@@ -1,0 +1,25 @@
+/*=== Custom Mobile Col ==*/	
+@media only screen and (max-width: 480px){
+	.full-xs{
+    	width: 100% !important;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	} 
+}
+@media only screen and (min-width: 1024px){
+	.col-xl-20{
+	    flex: 0 0 20%;
+	    max-width: 20%;
+	} 
+}
+/*== Custom Container ==*/
+@media (min-width: 1200px){
+	// .container {
+	//     max-width: 1140px;
+	// }
+	.container-page{
+		max-width: 1140px;
+		padding:0 15px;
+		margin:auto;
+	}
+}

@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import logo from './logo.svg'
+import Course from './componets/Course'
+import './App.css'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Course></Course>
+        <Course />
         <a
           className="App-link"
           href="https://reactjs.org"

@@ -1,0 +1,654 @@
+/*== Edit By DTM Reponsive ===*/
+$desktop:"max-width:1199px";
+$landscape-tablets:"(max-width:1024px)";
+$portrait-tablets:"(max-width:991px)";
+$landscape-mobile-big:"(max-width:767px)";
+$landscape-mobile:"(max-width:480px)";
+$portrait-mobile:"(max-width: 320px)";
+@media only screen and #{$landscape-tablets}{
+	ul.menu_main_list{
+		li{
+			margin: 0 10px 0 0;
+			a{
+				font-size: 13px;
+			}
+		}
+	}
+	.contact_page{
+		&_info{
+			.container {
+			    width: 100%;
+			    padding: 30px 15px 0;
+			}
+		}
+		&_form_bg {
+		    height: auto;
+		}
+		&_hotline{
+			 p:nth-child(2) {
+			    font-size: 20px;
+			}
+		}
+	}
+	.recuit_page_details_main{
+		.container{
+			width: 100%;
+		}
+		.recuit_page_details_box{
+			padding:30px;
+		}
+		.bg_pattern{
+			padding:0 0 30px;
+		}
+	}
+	.banner_main {
+	    position: static;
+	}
+	.logo_main{
+		margin:0;
+	}
+	.header_main_top {
+	    background: #550747;
+	    padding: 16px 15px;
+	    position: static;
+	    &.fixed{
+	    	padding:16px 15px;
+	    	box-shadow:none;
+	    }
+	}
+	.product_cate_list{
+		width:auto;
+	}
+	.product_home{
+		&_slide {
+		    padding: 0;
+		    &_owl_main{
+		    	width: 100%;
+		    	padding:0 15px;
+		    }
+		    &_text_mobile{
+				text-align: center;
+				margin: 0 auto 42px;
+				h4 {
+				    font-size: 24px;
+				    line-height: 31px;
+				    letter-spacing: 0.08em;
+				    color: $base-hover-color;
+				    font-family:$body-font-family-2;
+				}
+			}
+			&_text_readmore_mobile{
+				text-align: center;
+				padding: 49px 0;
+				p a {
+				    font-weight: bold;
+				    font-size: 14px;
+				    line-height: 17px;
+				    letter-spacing: 0.08em;
+				    color: $color-white;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    border-bottom: 2px solid $base-hover-color;
+				    padding: 0 0 8px;
+				}
+			}
+		}
+		&_readmore {
+		    margin: 18px auto 60px;
+		    a {
+			    padding: 0 0 12px;
+			}
+		}
+	}
+	.about_page_tabs_list{
+		 li a {
+		    padding: 16px;
+		    font-size: 14px;
+		    letter-spacing: 0;
+		}
+	}
+	.beautiful_home_form_details_owl_sync2{
+		.owl-prev{
+			left:0;
+		}
+		.owl-next{
+			right:0;
+		}
+		#sync2{
+			max-width:100%;
+		}
+	}
+	.another_beautiful_home_owl{
+		padding:0;
+	    .owl-prev{
+			left:30px;
+		}
+		.owl-next{
+			right:30px;
+		}
+	}
+	.code_color_tuylips_room {
+		ul {
+		    width: 100%;
+		    overflow-x: auto;
+		    li {
+			    padding: 0 33px 10px 0;
+			    a {
+				    white-space: pre;
+				}
+			}
+		}
+	}
+	.bg_page_top{
+	    padding: 30px 0;
+	    height: auto;
+	}
+	.news_page_content .container {
+	    max-width: 100%;
+	    padding: 30px 15px;
+	}
+	.code_color_tuylips_banner {
+		    max-width: 100vw;
+		    overflow-x: auto;
+		    svg {
+		    min-width: 44rem;
+		}
+	}
+	.banner_main{
+		height: 100%;
+		min-height: 100%;
+		img {
+		    height: 100% !important;
+		}
+	}
+	.content_main{
+		top:0;
+		position:static;
+	}
+}
+@media only screen and #{$portrait-tablets}{
+	/*=== Menu Mobile ===*/
+	#accordion{
+	    padding: 72px 0 0;
+	    height: calc(100% - 83px - 80px);
+	    overflow-y: auto;
+	}
+	.menu_mobile_ham {
+	    width: 25px;
+	    height: 25px;
+	    img{
+	    	height: auto !important;
+	    }
+	}
+	.menu_mobile{
+		&_box {
+		    background: url(../images/bg_menu_mobile.png) center center/contain repeat;
+		    overflow: hidden;
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    z-index: 10;
+		    right: 0;
+		    bottom: 0;
+		    height: 100vh;
+		    opacity:0;
+			transition:all ease .5s;
+			visibility:hidden;
+			transform:translateX(-100%);
+			display:block;
+			&.active{
+				opacity:1;
+				visibility:visible;
+				transform:translateX(0);
+			}
+		}
+		&_list_top {
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    padding: 20px;
+		}
+		&_list {
+		    li {
+			     a {
+				    font-weight: bold;
+				    font-size: 20px;
+				    line-height: 24px;
+				    color: #FFFFFF;
+				    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+				}
+				padding: 0 20px 36px;
+				color: #fff;
+			    font-size: 20px;
+			    i {
+				    float: right;
+				    padding:0 8px 0 0;
+				}
+				span{
+					display:flex;
+					align-items: center;
+					justify-content:space-between;
+				}
+			}
+			li.sub{
+				i{
+					&:before{
+						content: "\f077";
+					}
+				}
+			}
+			ul.menu_mobile_list_sub{
+				display: none;
+				li {
+				    padding:20px 20px 0;
+				    a {
+					    font-size: 17px;
+					    color: #ccc;
+					    font-weight:400;
+					}
+					&.sub{
+						i{
+							&:before{
+								content: "\f077";
+							}
+						}
+					}
+				}
+				i{
+					&:before{
+						content: "\f078";
+					}
+				}
+			}
+			ul.language_list_menu_box{
+				li {
+				    padding: 5px 0;
+				}
+			}
+			&_bottom {
+			    width: 100%;
+			    float: left;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    padding: 0 0 49px;
+			    & li {
+				    display: inline-block;
+				    padding: 0 16px;
+					a {
+					    width: 34px;
+					    height: 34px;
+					    display: inline-block;
+					}
+				}
+			}
+		}
+	}
+	.logo_menu {
+	    height: 30px;
+	    width: 137px;
+	}
+	.close_menu {
+	    width: 35px;
+	    height: 35px;
+	}
+	/*=== End Menu Mobile ===*/
+	.banner_main .owl-theme .owl-dots{
+		bottom:0;
+	}
+	.calculate_paint_page{
+		&_content {
+		    padding: 20px;
+		}
+		&_tab{
+			.nav{
+				li a {
+				    font-size: 20px;
+				    padding: 0 30px;
+				}
+			}
+		}
+	}
+	.beautiful_home_form{
+		&_title h2 {
+		    padding: 44px 0 0;
+		}
+		&_img_big {
+		    margin: 16px 0 0;
+		}
+		&_details_title h2{
+			margin:30px 0;
+		}
+	}
+	.code_color_main{
+		.no-padding-right{
+			padding:0 !important;
+		}
+	}
+	.news_home_big {
+	    display: flex;
+	    margin: 0 0 15px;
+	    &_img {
+			width: 195px;
+			height: 124px;
+		    margin: 0 20px 0 0;
+		}
+		&_info {
+		    display: block;
+		    flex: 1;
+		}
+	}
+	.news_home_small{
+		&_info {
+		    flex: 1;
+		}
+	}
+	.suggested_products_page{
+	    .suggested_products_slide_owl_main{
+	        .owl-prev {
+	            left: 0px;
+	        }
+	        .owl-next {
+	            right: 0px;
+	        }
+	    } 
+	}
+	.calculate_paint_page_search_shop{
+		padding:0;
+	}
+	.agency_listing_page{
+		&_filter h2{
+			font-size: 18px
+		}
+		&_img {
+		    width: 120px;
+		}
+	}
+	.products_page_details{
+		&_right,&_left{
+			height: auto;
+		}
+	}
+}
+@media only screen and #{$landscape-mobile-big}{
+	.banner_home{
+		h2 {
+		    font-size: 20px;
+		    bottom: 20px;
+		    max-width: 100%;
+		    padding: 0 15px;
+		    line-height: 35px;
+		}
+		span{
+			display:block;
+			font-size: 15px;
+		}
+	}
+	.title_page{
+		h1{
+			font-size: 28px;
+			line-height: 35px;
+		}
+	}
+	.contact_page_info_text,.contact_page_info_img{
+		height: auto;
+	}
+	.calculate_paint_page_info_total.calculate_paint_page_info {
+	    padding: 30px;
+	    strong {
+		    font-size: 16px;
+		}
+	}
+	.calculate_paint_page{
+		&_info_back a {
+		    padding: 0 0 30px;
+		}
+		&_info {
+		    padding: 30px;
+		}
+		&_tab{
+			.tab-content {
+			    padding: 30px;
+			}
+		}
+	}
+	.recuit_page_details_box{
+		img {
+		    width: 100% !important;
+		    height: auto !important;
+		    margin: 10px 0;
+		}
+	}
+	.menu_footer_list {
+		text-align: center;
+		margin: 30px 0 10px;
+		flex-wrap: wrap;
+	    li{
+	    	width: 50%;
+	    	a {
+			   margin: 0 0 20px;
+			}
+	    }
+	}
+}
+@media only screen and #{$landscape-mobile}{
+	.code_color_tuylips{
+		&_title h2 {
+		    padding: 30px 15px;
+		    font-size: 18px;
+		}
+		&_badge{
+			.badge{
+				margin:10px 0 5px;
+			}
+		}
+	}
+	.feng_shui_colors_page_details{
+		&_box {
+		    padding: 30px;
+		    h3 {
+			    font-size: 15px;
+			}
+		}
+		&_content{
+			padding:0 15px 15px;
+		}
+	}
+	.about_page{
+		&_content{
+			padding:0 0 15px;
+		}
+		&_tabs_list {
+		    justify-content: flex-start;
+		    overflow-x: auto;
+		    li{
+		    	a {
+				    white-space: pre;
+				}
+		    }
+		}
+	}
+	.products_page_content{
+		padding:30px 0 0;
+	}
+	.products_page_details_bg {
+	    padding: 15px;
+	}
+	.products_menu_list{
+		ul {
+			justify-content: flex-start;
+			overflow-x: auto;
+		    li{
+				max-width: unset;
+				padding: 0;
+				a {
+				    padding: 15px;
+				    white-space: pre;
+				}
+				&:not(:last-child) a {
+				    border-right:1px solid #b68012;
+				}
+		    }
+		}
+	}
+	.color_advice_page_content{
+		.container{
+			padding:30px 15px;
+		}
+	}
+	.recuit_page_link a {
+	    padding: 15px;
+	    font-size: 14px;
+	}
+	.code_color_title p{
+		padding:0 46px;
+		height:auto;
+	}
+	.beautiful_home_form {
+	    text-align: center;
+	    padding: 0 0 30px;
+	    &_title h2 {
+		    font-size: 28px;
+		    padding: 20px 0 0;
+		}
+		&_img_small {
+		    height: 162px;
+		}
+		&_img_big {
+		    height: 333px;
+		}
+		&_page_info{
+			padding:30px 15px;
+		}
+		&_details_caution{
+			padding:15px;
+			text-align: justify;
+		}
+	}
+	.code_color{
+		&_left{
+			height:auto;
+		}
+		&_title{
+			h2 {
+			    font-size: 28px;
+			}
+		}
+	}
+	.title_home{
+		h2 {
+		    font-size: 28px;
+		    &:before,&:after {
+			    display: none;
+			}
+		}
+	}
+	.des_home{
+	    max-width: 340px;
+	    margin: auto;
+	    font-weight: 500;
+	    padding: 25px 0 40px;
+	}
+	.product_cate_list_box_icon {
+	    width: 40px;
+	}
+	.product_home{
+		&_slide_left{
+			height:auto;
+		}
+		&_readmore {
+		    max-width: 300px;
+		}
+		&_slide_text_mobile {
+		    max-width: 220px;
+		}
+	}
+	.news_home{
+		&_small_img {
+		    width: 130px;
+		    height: 130px;
+		}
+		&_readmore {
+		    margin: 52px 0 42px;
+		    a {
+			    font-size: 14px;
+			    line-height: 17px;
+			}
+		}
+		&_big {
+		    &_img {
+			    width: 130px;
+			    height: 130px;
+			}
+			&_title{
+				 a {
+				    font-size: 12px;
+				    line-height: 23px;
+				}
+			}
+			&_info p a{
+				font-size: 12px;
+			}
+		}
+	}
+	.partner_footer {
+	    margin: 35px auto 0;
+	}
+	.calculate_paint_page{
+		&_tab{
+			.nav {
+			    display: block;
+			    li {
+				    padding: 0;
+				    a {
+					    padding: 20px 10px;
+					}
+					&:not(:last-child) a{
+						border-right: none;
+						border-bottom: 1px solid #BDBDBD;
+					}
+				}
+			}
+		}
+	}
+	.menu_kinds_of_house {
+	    display: block;
+	    li {
+		    margin: 0 0 1rem;
+		    padding: 0 10px;
+		}
+	}
+	.agency_listing_page{
+		&_content {
+		    padding: 30px 0;
+		}
+		&_regiter_link{
+			font-size: 16px;
+		}
+		&_info{
+			font-size: 12px;
+		}
+		&_filter{
+			 .select_main select{
+			 	font-size: 14px;
+			 }
+		}
+	}
+	.product_cate_list_box_text{
+		font-size:11px;
+		 line-height: 19px;
+	}
+}
+@media only screen and #{$portrait-mobile}{
+	.menu_mobile_list li a {
+	    font-size: 15px;
+	    line-height: 20px;
+	}
+	.recuit_page_link a {
+	    font-size: 13px;
+	}
+	.product_cate_list_box_text{
+		font-size: 10px;
+		line-height: 18px;
+	}
+}

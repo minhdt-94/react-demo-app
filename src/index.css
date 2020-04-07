@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.user_top{
+  background-color: red;
+  text-align: center;
+  padding:10px;
+}
+.toogle_button{
+  padding:10px;
+  display: block;
+  background-color: red;
+  color:#fff;
+  border:none;
+  margin:30px auto;
+  outline:none;
+  cursor: pointer;
+}
+.toogle_button:hover{
+  background-color:green;
+}
