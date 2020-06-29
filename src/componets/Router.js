@@ -36,7 +36,7 @@ const RouterComponents = () => ( // khởi tạo 1 component bằng lệnh arrow
             </ul>
            
         </div>
-        <div className="text-center padding-15gi">
+        <div className="text-center padding-15">
             <Route exact path='/' component={Home} />
             <Route  path='/info' component={Info} />
             <Route  path='/news' component={News} />
