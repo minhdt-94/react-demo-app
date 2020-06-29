@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/scss/style.scss';
 import Router from './componets/Router';
-import Redux from './componets/Redux';
+// import Redux from './componets/Redux';
 // Redux common //
-import createStore from 'redux';
+// import createStore from 'redux';
 // import App from './componets/App';
-import Demo from './componets/Demo'
+// import Demo from './componets/Demo'
 // import * as serviceWorker from './serviceWorker' ==> bỏ đi ko cần ;
 
 // ReactDOM.render(
@@ -14,9 +14,8 @@ import Demo from './componets/Demo'
 //     document.getElementById('root')
 // );
 
-
 ReactDOM.render(
-    <Demo />,
+    <Router />,
     document.getElementById('root')
 );
 
